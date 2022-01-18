@@ -1,10 +1,28 @@
 
 public class Carro {
 	
+	// Construtor
+	
+	public Carro() {
+		
+		chassi = 88846885;
+		marca = "Ford";
+		velocidadeMaxima = 200;
+		
+	}
+	
+	public Carro(int c, String m, int v) {
+		
+		chassi = c;
+		marca = m;
+		velocidadeMaxima = v;
+		
+	}
+	
 	// Atributos
-	int chassi = 78887;
-	String marca = "FORD";
-	int velocidadeMaxima = 200;
+	int chassi;
+	String marca;
+	int velocidadeMaxima;
 	
 	// Métodos
 	void buzina() {
@@ -13,9 +31,28 @@ public class Carro {
 	
 	}
 	
+	void roncoMotor() {
+		
+		System.out.println("Vruuumm");
+		
+	}
+	
+	void aumentarVelocidade(int valorVelocidade) {
+		
+		velocidadeMaxima += velocidadeMaxima;
+		System.out.println("Velocidade Nova: " + velocidadeMaxima);
+		
+	}
+	
 	int exibirVelocidade() {
 		
 		return velocidadeMaxima;
+		
+	}
+	
+	String exibirMarca() {
+		
+		return this.marca;
 		
 	}
 
